@@ -6,17 +6,20 @@ export function Stripe() {
   const [email, setEmail] = useState("");
   const handleCheckout = async () => {
     if (amount < 20 || amount > 5000) {
-      alert("Amount must be between $50 and $5000");
+      alert("Amount must be between $20 and $5000");
       return;
     } else if (!email) {
       alert("Please enter a valid email address");
       return;
     }
-    const res = await fetch("${VITE_NEST_BASE_URL}/stripe/checkout", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: Number(amount), email }),
-    });
+    const res = await fetch(
+      `${import.meta.env.VITE_NEST_BASE_URL}/stripe/checkout`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: Number(amount), email }),
+      }
+    );
 
     const data = await res.json();
     globalThis.location.href = data.url; // Redirect to Stripe Checkout
