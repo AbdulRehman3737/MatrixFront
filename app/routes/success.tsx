@@ -5,7 +5,7 @@ const Success = () => {
         <h1 className="text-xl lg:text-6xl font-bold text-green-900">
           Payment Successful!
         </h1>
-        <p className="text-gray-700 dark:text-gray-200 text-center">
+        <p className="text-gray-700 text-shadow-lg font-bold dark:text-gray-200 text-center">
           Thank you for your purchase. Your payment has been processed
           successfully.
         </p>

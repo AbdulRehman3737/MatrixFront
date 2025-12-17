@@ -5,7 +5,7 @@ const Cancel = () => {
         <h1 className="text-xl lg:text-6xl font-bold text-red-900">
           Payment Cancelled
         </h1>
-        <p className="text-gray-700 dark:text-gray-200 text-center">
+        <p className="text-gray-700 text-shadow-lg font-bold dark:text-gray-200 text-center">
           Your payment has not been processed.
         </p>
       </div>

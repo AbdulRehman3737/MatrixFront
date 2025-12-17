@@ -29,7 +29,7 @@ export function Stripe() {
       <div className="flex flex-col w-5/6 lg:w-2/6 h-fit p-8 items-center justify-center gap-16 min-h-0 glassmorphism-bg">
         <div className="flex flex-wrap items-center justify-center gap-16">
           <label className="w-10/12 block mb-4">
-            <span className="text-gray-700 dark:text-gray-200">
+            <span className="text-gray-700 text-shadow-lg font-bold dark:text-gray-200">
               Amount (USD) *
             </span>
             <input
@@ -47,7 +47,7 @@ export function Stripe() {
           </label>
 
           <label className="w-10/12 block mb-6">
-            <span className="text-gray-700 dark:text-gray-200">
+            <span className="text-gray-700 text-shadow-lg font-bold dark:text-gray-200">
               Your Email *
             </span>
             <input
