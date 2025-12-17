@@ -1,0 +1,14 @@
+.animate-bounceText {
+  display: inline-block;
+  animation: bounceText 0.6s ease-in-out infinite;
+}
+
+@keyframes bounceText {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+}
