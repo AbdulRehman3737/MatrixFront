@@ -26,9 +26,9 @@ export function Stripe() {
   };
   return (
     <main className="flex items-center justify-center pt-16 pb-4 h-full">
-      <div className="flex flex-col w-2/6 h-fit p-8 items-center justify-center gap-16 min-h-0 glassmorphism-bg">
-        <div className="flex items-center justify-center gap-16">
-          <label className="w-6/12 block mb-4">
+      <div className="flex flex-col w-5/6 lg:w-2/6 h-fit p-8 items-center justify-center gap-16 min-h-0 glassmorphism-bg">
+        <div className="flex flex-wrap items-center justify-center gap-16">
+          <label className="w-10/12 block mb-4">
             <span className="text-gray-700 dark:text-gray-200">
               Amount (USD) *
             </span>
@@ -46,7 +46,7 @@ export function Stripe() {
             />
           </label>
 
-          <label className="w-6/12 block mb-6">
+          <label className="w-10/12 block mb-6">
             <span className="text-gray-700 dark:text-gray-200">
               Your Email *
             </span>
