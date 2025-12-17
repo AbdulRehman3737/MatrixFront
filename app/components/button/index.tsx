@@ -8,7 +8,7 @@ type ButtonProps = {
 const Button = ({ content, clickHandler }: ButtonProps) => {
   return (
     <button
-      className="border-[#ffe962] border-2 bg-black p-5 rounded-2xl cursor-pointer text-7xl text-[#ffe962]"
+      className="border-[#ffe962] border-2  p-5 rounded-2xl cursor-pointer text-7xl text-green-900"
       onClick={clickHandler}
     >
       <span className="animate-bounceText">{content}</span>
