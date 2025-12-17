@@ -1,5 +1,3 @@
-import React from "react";
-
 const Cancel = () => {
   return (
     <main className="flex items-center justify-center pt-16 pb-4 h-full">
