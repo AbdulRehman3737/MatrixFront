@@ -35,6 +35,7 @@ export function Stripe() {
             <input
               type="number"
               min={5}
+              max={5000}
               value={amount}
               placeholder="5"
               onChange={(e) => setAmount(Number(e.target.value))}
