@@ -2,11 +2,11 @@ import { useState } from "react";
 import Button from "~/components/button";
 
 export function Stripe() {
-  const [amount, setAmount] = useState(20);
+  const [amount, setAmount] = useState(5);
   const [email, setEmail] = useState("");
   const handleCheckout = async () => {
-    if (amount < 20 || amount > 5000) {
-      alert("Amount must be between $20 and $5000");
+    if (amount < 5 || amount > 5000) {
+      alert("Amount must be between $5 and $5000");
       return;
     } else if (!email) {
       alert("Please enter a valid email address");
