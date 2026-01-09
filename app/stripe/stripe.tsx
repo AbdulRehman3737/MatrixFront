@@ -34,10 +34,9 @@ export function Stripe() {
             </span>
             <input
               type="number"
-              min={20}
-              max={5000}
+              min={5}
               value={amount}
-              placeholder="20"
+              placeholder="5"
               onChange={(e) => setAmount(Number(e.target.value))}
               className="mt-1 block w-full rounded-lg border border-gray-300 dark:border-gray-600
                      bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100
